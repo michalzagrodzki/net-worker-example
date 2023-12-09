@@ -1,13 +1,3 @@
-/*using net_worker_mediatr;
-
-IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
-    {
-        services.AddHostedService<Worker>();
-    })
-    .Build();
-
-host.Run(); */
 using Microsoft.EntityFrameworkCore;
 using MediatR;
 
