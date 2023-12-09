@@ -27,7 +27,7 @@ public class Program
                     options.UseInMemoryDatabase(databaseName: "NumberDatabase"));
 
                 services.AddMediatR(typeof(Program));
-                services.AddTransient<IRepository, NumberRepository>();
+                services.AddScoped<NumberRepository>();
                 services.AddHostedService<NumberBackgroundService>();
                 services.AddLogging();
             });
